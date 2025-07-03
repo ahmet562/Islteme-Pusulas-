@@ -1,0 +1,76 @@
+.dashboard-content {
+    padding: 30px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-list-box {
+    margin-bottom: 30px;
+}
+
+h4.gray {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.dashboard-list-box-static label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.dashboard-list-box-static input[type="text"],
+.dashboard-list-box-static textarea,
+.dashboard-list-box-static select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.dashboard-list-box-static input[type="text"]:focus,
+.dashboard-list-box-static textarea:focus,
+.dashboard-list-box-static select:focus {
+    border-color: #ff5a5f;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.edit-profile-photo img {
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    margin-top: 20px;
+    background-color: #ff5a5f;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #e14c4f;
+}

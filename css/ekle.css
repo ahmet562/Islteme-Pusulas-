@@ -1,0 +1,187 @@
+/* Genel düzen */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sayfa içeriği */
+.dashboard-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Form alanları */
+.dashboard-form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Kutu */
+.dashboard-list-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-list-box h4.gray {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Girişler ve etiketler */
+.dashboard-list-box input[type="text"],
+.dashboard-list-box input[type="email"],
+.dashboard-list-box input[type="number"],
+.dashboard-list-box input[type="date"],
+.dashboard-list-box select,
+.dashboard-list-box textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+.dashboard-list-box input:focus,
+.dashboard-list-box textarea:focus,
+.dashboard-list-box select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buton */
+.button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Fotoğraf yükleme */
+.edit-profile-photo {
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.edit-profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.change-photo-btn {
+    position: absolute;
+    top: 0;
+    bottom: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 2;
+}
+
+
+.change-photo-btn span {
+    color: #fff;
+    font-size: 13px;
+}
+
+.change-photo-btn input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-form .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6,
+    .col-md-6,
+    .col-xs-12 {
+        width: 100%;
+        padding-right: 0 !important;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.panel-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-name {
+    font-size: 16px;
+    color: #444;
+}
+
+.logout-button {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
